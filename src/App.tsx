@@ -4,12 +4,20 @@ import Contact from "./components/pages/Contact";
 import ReportIncident from "./components/pages/ReportIncident";
 import Header from "./components/pages/Header";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useContext } from "react";
+import { DataContext } from "./Provider/DataProvider";
 
 function App() {
+  // const [title, settitle] = useState("");
+  // const [description, setdescription] = useState("");
+  // const [severity, setseverity] = useState("");
+  // const [loading, setLoading] = useState(false);
+const reportData = useContext(DataContext)
+
   return (
     <>
       <Router>
-      <Header />
+        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/report" element={<ReportIncident />} />
