@@ -21,3 +21,12 @@ const data = [
     reported_at: "2025-03-20T091500Z",
   },
 ];
+
+export const setLocalStorage = () => {
+  localStorage.setItem("data", JSON.stringify(data));
+};
+
+export const getLocalStorage = () => {
+  const data = JSON.parse(localStorage.getItem("data") || "[]");
+  return data;
+};
