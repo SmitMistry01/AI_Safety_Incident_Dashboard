@@ -5,14 +5,21 @@ interface DataProviderProps {
   children: ReactNode;
 }
 
-export const DataContext = createContext<{ data: string } | null>(null);
+interface IncidentData {
+  title: string;
+  severity: string;
+  reported_at: string;
+  description:string;
+}
+
+export const DataContext = createContext<IncidentData[] | null>(null);
 
 function DataProvider({ children }: DataProviderProps) {
-  const [data, setData] = useState<{ data: any } | null>(null);
+  const [data, setData] = useState<IncidentData[] | null>(null);
   useEffect(() => {
     setLocalStorage();
-    const data = getLocalStorage();
-    setData(data);
+    const storedData = getLocalStorage();
+    setData(storedData);
   }, []);
   return (
     <>
@@ -21,4 +28,4 @@ function DataProvider({ children }: DataProviderProps) {
   );
 }
 
-export default DataProvider;
+export default DataProvider;
