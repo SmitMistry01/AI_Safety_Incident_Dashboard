@@ -55,8 +55,8 @@ A responsive, filterable incident report card component built with **React** and
 
 ### 1. Clone the Repository
 
-git clone https://github.com/your-username/ai-safety-dashboard.git
-cd ai-safety-dashboard
+git clone https://github.com/SmitMistry01/AI_Safety_Incident_Dashboard.git
+cd "AI Safety Dashboard"
 
 
 ### 2. Install Dependencies
