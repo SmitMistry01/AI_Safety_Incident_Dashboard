@@ -38,7 +38,7 @@ function Sort({ onApplyFilters }: { onApplyFilters: (filters: { severity: string
 
       <button
         onClick={handleApply}
-        className="px-4 py-1.5 bg-blue-500 hover:bg-blue-600 text-white text-sm rounded-md transition-colors focus:outline-none focus:ring-1 focus:ring-blue-400"
+        className="px-4 py-1.5 bg-blue-500 hover:bg-blue-600 rounded-md text-white text-sm"
       >
         Apply
       </button>

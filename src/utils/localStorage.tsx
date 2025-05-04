@@ -1,20 +1,17 @@
 const data = [
   {
-    id: 1,
     title: "Biased Recommendation Algorithm",
     description: "Algorithm consistently favored certain demographics...",
     severity: "Medium",
     reported_at: "2025-03-15T100000Z",
   },
   {
-    id: 2,
     title: "LLM Hallucination in Critical Info",
     description: "LLM provided incorrect safety procedure information...",
     severity: "High",
     reported_at: "2025-04-01T143000Z",
   },
   {
-    id: 3,
     title: "Minor Data Leak via Chatbot",
     description: "Chatbot inadvertently exposed non-sensitive user metadata...",
     severity: "Low",
@@ -23,7 +20,9 @@ const data = [
 ];
 
 export const setLocalStorage = () => {
-  localStorage.setItem("data", JSON.stringify(data));
+  if(localStorage.getItem("data")===null){
+    localStorage.setItem("data", JSON.stringify(data));
+  }
 };
 
 export const getLocalStorage = () => {
