@@ -2,7 +2,8 @@
 
 A responsive, filterable incident report card component built with **React** and **Tailwind CSS**. It displays incident details such as title, severity, date, and description, with optional sorting and filtering and report the incident.
 
----
+
+## Deployed Link - https://ai-safety-incident-dashboard-wheat.vercel.app/
 
 ## ✨ Features
 
