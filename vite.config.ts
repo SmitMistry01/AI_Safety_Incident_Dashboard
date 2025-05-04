@@ -4,6 +4,6 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/AI_Safety_Incident_Dashboard/',
+  // base: '/AI_Safety_Incident_Dashboard/',
   plugins: [react(),tailwindcss()],
 });
